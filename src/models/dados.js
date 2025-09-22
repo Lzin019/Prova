@@ -6,7 +6,7 @@ const mangas = [
       editora: "Shueisha",
       volumes: 109,
       genero: "Aventura, Fantasia",
-      status: "Em andamento",
+      status: "Publicando",
       anoInicio: 1997,
       preco: 34.90
     },
@@ -17,7 +17,7 @@ const mangas = [
       editora: "Hakusensha",
       volumes: 42,
       genero: "Fantasia Sombria",
-      status: "Em andamento",
+      status: "Hiato",
       anoInicio: 1989,
       preco: 69.90
     },
@@ -28,7 +28,7 @@ const mangas = [
       editora: "Shueisha",
       volumes: 72,
       genero: "Ação, Aventura",
-      status: "Concluído",
+      status: "Finalizado",
       anoInicio: 1999,
       preco: 29.90
     },
@@ -39,7 +39,7 @@ const mangas = [
       editora: "Kodansha",
       volumes: 34,
       genero: "Ação, Fantasia Sombria",
-      status: "Concluído",
+      status: "Finalizado",
       anoInicio: 2009,
       preco: 39.90
     },
@@ -50,7 +50,7 @@ const mangas = [
       editora: "Shueisha",
       volumes: 12,
       genero: "Suspense, Mistério",
-      status: "Concluído",
+      status: "Finalizado",
       anoInicio: 2003,
       preco: 32.50
     },
@@ -61,7 +61,7 @@ const mangas = [
       editora: "Square Enix",
       volumes: 27,
       genero: "Aventura, Fantasia",
-      status: "Concluído",
+      status: "Finalizado",
       anoInicio: 2001,
       preco: 35.00
     },
@@ -72,7 +72,7 @@ const mangas = [
       editora: "Shueisha",
       volumes: 23,
       genero: "Ação, Fantasia",
-      status: "Concluído",
+      status: "Finalizado",
       anoInicio: 2016,
       preco: 30.00
     },
@@ -83,7 +83,7 @@ const mangas = [
       editora: "Shueisha",
       volumes: 27,
       genero: "Ação, Fantasia Sombria",
-      status: "Em andamento",
+      status: "Publicando",
       anoInicio: 2018,
       preco: 34.90
     },
@@ -94,7 +94,7 @@ const mangas = [
       editora: "Shueisha",
       volumes: 40,
       genero: "Ação, Super-heróis",
-      status: "Em andamento",
+      status: "Publicando",
       anoInicio: 2014,
       preco: 29.90
     },
@@ -105,7 +105,7 @@ const mangas = [
       editora: "Shueisha",
       volumes: 17,
       genero: "Ação, Terror",
-      status: "Em andamento",
+      status: "Publicando",
       anoInicio: 2018,
       preco: 38.00
     },
