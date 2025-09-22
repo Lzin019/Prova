@@ -56,26 +56,33 @@ const getMangasById = (req, res) => {
  }
 };
 
+
+
 const createManga = (req, res) => {
-    const { titulo, autor, editora, volumes, genero, status, anoInicio, preco} = req.body;
+    const {
+        id,
+        titulo,
+        autor,
+        editora,
+        genero,
+        status,
+        } = req.body;
 
     if(!titulo || !autor){
         return res.status(400).json({
             success: false,
-            message: "Titulo e Autor são obrigatorios"
+            message: "Nome e autor são obrigatorios"
         });
     } 
 
     const novoManga = {
         id: mangas.length + 1,
-        titulo: nome,
-        autor: autor,
-        editora: editora,
+        titulo,
+        autor,
+        editora,
         volumes: parseInt(volumes),
-        genero: genero,
-        status: status,
-        anoInicio: anoInicio,
-        preco: preco,
+        genero,
+        status
     }
 
     mangas.push(novoManga);
@@ -83,48 +90,9 @@ const createManga = (req, res) => {
     res.status(201).json({
         success: true,
         message:"Manga cadastrado com sucesso",
-        carro:novoManga
+        manganovoManga
     });
 }
-
-  // Regras de negócio
-
-  if (volumes <= 0) {
-    return res.status(400).json({
-        success: false,
-         message: "O numero de volumes deve ser maior que 0!",
-        });
-  }
-
-  if (status === "publicando, finalizado, hiato") {
-    res.status(400).json({
-      success: false,
-      message:
-        "Status deve ser exatamente uma das opções: Publicando, Finalizado Hiato",
-    });
-  }
-
-  // Fim das regras de negócio e continuação da criação do manga
-
-  const novoManga = {
-    id: mangas.length + 1,
-    titulo,
-    autor,
-    editora,
-    volumes,
-    genero,
-    status,
-    anoInicio,
-    preco,
-  };
-
-  mangas.push(novoManga);
-
-  res.status(200).json({
-    success: true,
-    message: "Manga cadastrado com sucesso!",
-    manga: novoManga,
-  });
 
 
 const deleteManga = (req, res) => {
